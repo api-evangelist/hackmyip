@@ -1,0 +1,32 @@
+aid: hackmyip
+name: HackMyIP
+description: "IP geolocation, ISP and privacy/VPN scoring, email breach checks, DNS and WHOIS lookups"
+url: https://hackmyip.com/api
+specificationVersion: '0.20'
+created: '2026-05-28'
+modified: '2026-05-28'
+x-source: public-apis/public-apis
+x-category: "Geocoding"
+x-tier: 3
+x-tier-reason: bulk-registered-from-public-apis
+tags:
+  - Geocoding
+  - Public APIs
+apis:
+  - name: HackMyIP
+    description: "IP geolocation, ISP and privacy/VPN scoring, email breach checks, DNS and WHOIS lookups"
+    humanURL: https://hackmyip.com/api
+    baseURL: https://hackmyip.com/api
+    tags:
+      - Geocoding
+    properties:
+      - type: Documentation
+        url: https://hackmyip.com/api
+common:
+  - type: Website
+    url: https://hackmyip.com/api
+  - type: PublicAPIsListing
+    url: https://github.com/public-apis/public-apis
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
