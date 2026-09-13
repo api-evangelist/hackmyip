@@ -1,0 +1,49 @@
+generated: '2026-09-11'
+method: probed
+source: https://hackmyip.com/mcp
+status: published
+server:
+  name: hackmyip
+  transport: http
+  url: https://hackmyip.com/mcp
+deployment:
+  mode: remote
+  endpoint: https://hackmyip.com/mcp
+  verified: probed
+  probe: live
+  checked: '2026-09-11'
+  source: docs-check 2026-09-12 (endpoint found in the provider's own documentation, then probed)
+tools_count: 15
+tools:
+- name: server_info
+  description: ''
+- name: my_ip
+  description: ''
+- name: ip_lookup
+  description: ''
+- name: bulk_ip_lookup
+  description: ''
+- name: vpn_proxy_check
+  description: ''
+- name: asn_lookup
+  description: ''
+- name: reverse_dns
+  description: ''
+- name: dns_lookup
+  description: ''
+- name: whois_domain
+  description: ''
+- name: ip_blacklist_check
+  description: ''
+- name: email_breach_check
+  description: ''
+- name: email_auth_check
+  description: ''
+- name: security_headers_check
+  description: ''
+- name: port_scan
+  description: ''
+- name: site_status_check
+  description: ''
+tools_source: live tools/list via initialize handshake, 2026-09-12 (signals/audit_mcp_authorship.py --probe)
+authorship: provider
