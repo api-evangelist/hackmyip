@@ -16,34 +16,66 @@ deployment:
 tools_count: 15
 tools:
 - name: server_info
-  description: ''
+  description: 'Describe this MCP server: what it wraps, the fact that it is completely free with no API
+    key, no signup and no auth, the fair-use rate limit, the full tool list, and links to hackmyip.com
+    and its API docs. Call this when the user asks what'
 - name: my_ip
-  description: ''
+  description: Get the public IP address of the machine that opened this MCP connection, enriched with
+    city/country, coordinates, timezone, ISP, ASN and hosting/proxy classification. Use this for 'what
+    is my IP', 'where does the internet think I am', or a
 - name: ip_lookup
-  description: ''
+  description: Look up geolocation (city, region, country, lat/lon, timezone, postal code) plus ISP, ASN,
+    organization and AS name for any public IPv4 or IPv6 address. The workhorse tool for 'where is this
+    IP', triaging a log entry, or identifying who own
 - name: bulk_ip_lookup
-  description: ''
+  description: Look up country, city, ISP, organization and coordinates for up to 50 IP addresses in a
+    single request. Much faster and far kinder to the rate limit than calling ip_lookup in a loop — always
+    prefer this when you have more than a couple of a
 - name: vpn_proxy_check
-  description: ''
+  description: Classify an IP as hosting/datacenter, open proxy, or mobile-carrier, alongside its geolocation
+    and network owner. Use it to decide whether traffic is likely a VPN, a cloud server or a real residential/mobile
+    user — for fraud triage, abuse r
 - name: asn_lookup
-  description: ''
+  description: Resolve an Autonomous System by IP address, AS number, or organization name. Returns the
+    AS number, network name, holder, description, RIR and whether the AS is currently announced. Use it
+    to answer 'which network is this IP on', 'who is AS
 - name: reverse_dns
-  description: ''
+  description: Get the PTR hostname for an IPv4 or IPv6 address. Useful for identifying mail servers,
+    confirming that a crawler really belongs to the bot it claims to be, or adding a human-readable name
+    to a raw log IP.
 - name: dns_lookup
-  description: ''
+  description: Query live DNS records for a domain over public resolvers. Supports A, AAAA, CNAME, MX,
+    NS, TXT, SOA, SRV, CAA and PTR. Use it to verify a deployment's DNS, inspect MX/SPF/DKIM/DMARC TXT
+    records, check nameserver delegation, or confirm prop
 - name: whois_domain
-  description: ''
+  description: 'Fetch registration data for a domain via RDAP: registrar, creation/expiration/last-updated
+    dates, nameservers and EPP status codes. Use it to check domain age (a common trust signal), see when
+    a domain expires, or find who it is registered'
 - name: ip_blacklist_check
-  description: ''
+  description: Check an IPv4 address against 12 major spam and abuse blacklists (Spamhaus ZEN, Barracuda,
+    SpamCop, UCEPROTECT and others) with a per-list LISTED / CLEAN / unavailable breakdown. Run this before
+    sending bulk email from a new IP, or when mai
 - name: email_breach_check
-  description: ''
+  description: Check whether an email address appears in known data breaches, using the XposedOrNot breach
+    database. Returns the number of breaches and the named services involved. Free alternative to paid
+    breach-lookup APIs. The address is partially mask
 - name: email_auth_check
-  description: ''
+  description: 'Audit a domain''s email authentication setup: MX records, SPF record and DMARC policy,
+    with a pass/warn/fail verdict per mechanism and an overall grade. Use it when diagnosing deliverability,
+    hardening a domain against spoofing, or reviewing'
 - name: security_headers_check
-  description: ''
+  description: 'Fetch a site and grade its HTTP security headers (A-F): CSP, HSTS, X-Frame-Options, X-Content-Type-Options,
+    Referrer-Policy, Permissions-Policy, plus information-leak headers like Server and X-Powered-By. Each
+    check comes back with the actu'
 - name: port_scan
-  description: ''
+  description: Run a real server-side TCP connect scan against a public host. Each port comes back as
+    open (handshake completed), closed (refused/reset), filtered (no response, likely firewalled) or blocked
+    (Cloudflare blocks outbound to that port, e.g. 2
 - name: site_status_check
-  description: ''
+  description: Check whether a site is reachable from Cloudflare's network. Returns an up/down boolean,
+    HTTP status code, response time in milliseconds, and the server / content-type headers. Use it to
+    confirm an outage is real rather than local, or to ve
 tools_source: live tools/list via initialize handshake, 2026-09-12 (signals/audit_mcp_authorship.py --probe)
 authorship: provider
+descriptions_source: live tools/list (authorship probe or saved capture); filled by backfill-tools-from-authorship.py
+  --descriptions, 2026-09-28
