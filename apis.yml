@@ -39,7 +39,6 @@ apis:
   - name: HackMyIP
     description: "IP geolocation, ISP and privacy/VPN scoring, email breach checks, DNS and WHOIS lookups"
     humanURL: https://hackmyip.com/api
-    baseURL: https://hackmyip.com/api
     tags:
       - Geocoding
     properties:
