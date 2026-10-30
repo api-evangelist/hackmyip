@@ -1,4 +1,4 @@
-# HackMyIP (hackmyip)
+# HackMyIP
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,26 +66,90 @@
 
 IP geolocation, ISP and privacy/VPN scoring, email breach checks, DNS and WHOIS lookups
 
-**APIs.yml:** [apis.yml](apis.yml)
+**Areas:** Geocoding · Public APIs
 
-## Type
-- **x-type:** company
-- **x-tier:** 3 (bulk-registered from public-apis)
-- **source:** [public-apis/public-apis](https://github.com/public-apis/public-apis) — category: Geocoding
+## HackMyIP on APIs.io
 
-## API
-- **HackMyIP** — [Documentation](https://hackmyip.com/api)
+Everything profiled for HackMyIP is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/hackmyip/](https://apis.io/providers/hackmyip/)** — or go straight to one of the APIs or properties below.
 
-## Tags
-Geocoding, Public APIs
+### APIs (1)
 
-## Notes
-This entry was bulk-registered as part of a public-apis catalog sweep on 2026-05-28.
-A real OpenAPI artifact will be added during a follow-up enrichment pass if the provider publishes one.
+- [HackMyIP](https://apis.io/apis/hackmyip/hackmyip/) — IP geolocation, ISP and privacy/VPN scoring, email breach checks, DNS and WHOIS lookups
 
-## Timestamps
-- **Created:** 2026-05-28
-- **Modified:** 2026-05-28
+### Published properties
 
-## Maintainers
-- **Kin Lane** — kin@apievangelist.com
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [hackmyip](https://apis.io/servers/hackmyip/hackmyip/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Hackmyip Domain Security](https://apis.io/security/hackmyip/hackmyip-domain-security/)
+- [Hackmyip Vulnerability Disclosure](https://apis.io/security/hackmyip/hackmyip-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://hackmyip.com/api)
+
+## API Evangelist rating
+
+**Kin Score 7.8** — minimal · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 50.0 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 9.5 |
+| Access clarity | 0.0 |
+
+**Agent readiness 8.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 11.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/hackmyip/](https://apis.io/providers/hackmyip/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for HackMyIP: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/hackmyip/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
